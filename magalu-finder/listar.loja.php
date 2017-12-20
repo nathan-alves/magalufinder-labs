@@ -2,7 +2,7 @@
     <head>
 	<meta charset="utf-8">
 	<title>Magalu Finder</title>
-    <link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
+    	<link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="assets/css/proa.css">	
 	<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
 </head>
@@ -47,7 +47,7 @@
 					<th style="color:black" class="table__cell">Descrição</th>
 					<th style="color:black" class="table__cell">Endereço</th>
 					<th style="color:black" class="table__cell">Bairro</th>
-					<th style="color:black" class="table__cell">Cep</th>
+					<th style="color:black" class="table__cell">CEP</th>
 					<th style="color:black" class="table__cell">Cidade</th>
 				</tr>
 			</thead>
@@ -81,5 +81,5 @@
 			</tbody>
 		</table>
 		
-		<br /><br />
+		<br/><br />
 	

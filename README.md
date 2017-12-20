@@ -1,4 +1,4 @@
-# magalufinder-labss
+# magalufinder-labs
 
 Desenvolvimento de uma aplicação para informar ao cliente qual a loja mais próxima, de acordo como o produto desejado.
 

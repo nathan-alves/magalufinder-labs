@@ -1,5 +1,5 @@
 <?php
-	include_once("../model/model.usuario.php");
+	include_once "./model/model.usuario.php";
 	
 	//Classe de Comunicação com Model e View (Regra de negócios)
 	class UsuarioController extends UsuarioModel {

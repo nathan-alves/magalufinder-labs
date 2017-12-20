@@ -1,5 +1,5 @@
 <?php
-	include_once("../model/model.produto.php");
+	include_once "./model/model.produto.php";
 	
 	//Classe de Comunicação com Model e View (Regra de negócios)
 	class ProdutoController extends ProdutoModel {

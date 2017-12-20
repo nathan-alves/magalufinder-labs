@@ -28,8 +28,8 @@
 		}
 		else
 		{
-				echo "<h3><center>Falha ao adicionar loja!</center></h3>";
-			    include("home.html");
+			echo "<h3><center>Falha ao adicionar loja!</center></h3>";
+			include("home.html");
 		}
 ?>
 

@@ -1,6 +1,6 @@
 <?php
-		include_once("./model/dao.php");
-		include_once("./controller/controller.produto.php");
+		include_once "./model/dao.php";
+		include_once "./controller/controller.produto.php";
 		
 		$codigo = $_POST['txt_codigo'];
 		$nome = $_POST['txt_nome'];
@@ -27,10 +27,3 @@
 			include("home.html");
 		}
 ?>
-<!--<br /><br />
-
-<div align="center">
-	<input type="submit" value="Cadastrar novo Cliente" target="_parent" onClick="document.location='./cad-usuario.html'">
-	<input type="submit" value="Listar todos os Clientes" target="_parent" onClick="document.location='./lista_clientes.php'">
-</div> -->
-

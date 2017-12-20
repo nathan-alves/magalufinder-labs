@@ -2,7 +2,7 @@
     <head>
 	<meta charset="utf-8">
 	<title>Magalu Finder</title>
-    <link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
+    	<link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="assets/css/proa.css">	
 	<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
 </head>
@@ -53,10 +53,10 @@
 				//Cria um objeto do tipo Produto Controller
 				$usuario = new ProdutoController();
 				
-				//Resgatam todos clientes cadastrados e armazena em um array $listagem
+				//Resgatam todos produtos cadastrados e armazena em um array $listagem
 				$listagem = $usuario->listarTodos();
 				
-				//Se existir pelo menos 1 cliente no array entra no IF
+				//Se existir pelo menos 1 produto no array entra no IF
 				if (count($listagem) > 0) {
 					$i = 0;
 		        foreach($listagem as $dados) {
@@ -74,3 +74,5 @@
 			?>
 			</tbody>
 		</table>
+		<br/><br/>
+	

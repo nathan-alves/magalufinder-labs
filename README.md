@@ -15,5 +15,7 @@ Ao acessar a página inicial da aplicação, é informado ao cliente o seu espa�
 ADMINISTRAÇÃO:
 
 Pela página inicial, o administrador deve clicar no link que esta no canto superior direito da página 'Login ADM', onde o mesmo será redirecionado para a tela de login.
-  Após fazer login, no painel de controle o administrador terá acesso aos cadastros de novos usuários, lojas e produtos que está vinculado com banco de dados phpMyAdmin.
+  Após fazer login, no painel de controle o administrador terá permissão para efetuar cadastros de novos usuários, lojas e produtos que está vinculado com banco de dados phpMyAdmin, onde conseguirá também visualizar, todas as informações que foram cadastradas na base de cada ítem (Usuários, Lojas e Produtos).
+  
+  Considerações
 

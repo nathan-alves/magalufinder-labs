@@ -52,13 +52,13 @@
 			</thead>
 			<tbody  class="table__body">
 			<?php
-				//Cria um objeto do tipo Produto Controller
+				//Cria um objeto do tipo Usuario Controller
 				$usuario = new UsuarioController();
 				
-				//Resgatam todos clientes cadastrados e armazena em um array $listagem
+				//Resgatam todos usuarios cadastrados e armazena em um array $listagem
 				$listagem = $usuario->listarTodos();
 				
-				//Se existir pelo menos 1 cliente no array entra no IF
+				//Se existir pelo menos 1 usuario no array entra no IF
 				if (count($listagem) > 0) {
 					$i = 0;
 		        foreach($listagem as $dados) {
@@ -78,6 +78,5 @@
 			?>
 			</tbody>
 		</table>
-		
-
+		<br/><br />
 	

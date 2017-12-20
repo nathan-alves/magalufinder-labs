@@ -74,6 +74,3 @@
 			?>
 			</tbody>
 		</table>
-		
-		<br /><br />
-	

@@ -53,13 +53,13 @@
 			</thead>
 			<tbody  class="table__body">
 			<?php
-				//Cria um objeto do tipo Produto Controller
+				//Cria um objeto do tipo Loja Controller
 				$usuario = new LojaController();
 				
-				//Resgatam todos clientes cadastrados e armazena em um array $listagem
+				//Resgatam todos lojas cadastrados e armazena em um array $listagem
 				$listagem = $usuario->listarTodos();
 				
-				//Se existir pelo menos 1 cliente no array entra no IF
+				//Se existir pelo menos 1 loja no array entra no IF
 				if (count($listagem) > 0) {
 					$i = 0;
 		        foreach($listagem as $dados) {
@@ -80,4 +80,5 @@
 			?>
 			</tbody>
 		</table>
-
+		<br/><br/>
+	

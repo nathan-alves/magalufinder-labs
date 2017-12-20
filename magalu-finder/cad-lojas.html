@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Magalu Finder</title>
+    <link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/proa.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/stripcolor.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+</head>
+<body style="background-color: #E8E8E8">
+    
+     <div class="estiloMenu">
+        <div class="divMenuItens">Lojas</div>
+        <div class="container-strip-footer">
+            <span class="divLu">
+                <img src="imagens/lu.png" height="149px" width="155px">
+            </span>
+      
+            <div class="strips">
+                <span class="strips__strip -yellow"></span>
+                <span class="strips__strip -orange"></span>
+                <span class="strips__strip -red"></span>
+                <span class="strips__strip -pink"></span>
+                <span class="strips__strip -purple"></span>
+                <span class="strips__strip -purple-dark"></span>
+                <span class="strips__strip -blue"></span>
+                <span class="strips__strip -cyan"></span>
+                <span class="strips__strip -green-light"></span>
+                <span class="strips__strip -green"></span>
+            </div>
+            <br>
+        
+            <div>
+                <form name="form_loja" id="form_loja" method="POST" action="adicionarloja.php" class="form1">
+
+                    <div class="form-input">
+                        <label for="txt_id" class="form-input__label">ID</label>
+                        <input type="txt" name="txt_id" placeholder="ID" class="form-input__field" required>
+                    </div> 
+                    <div class="form-input">
+                        <label for="txt_filial" class="form-input__label">Filial</label>
+                        <input type="text" name="txt_filial" placeholder="Filial" class="form-input__field" required>
+                    </div>
+                     <div class="form-input">
+                        <label for="txt_descricao" class="form-input__label">Descrição</label>
+                        <input type="text" name="txt_descricao" placeholder="Descrição do local" class="form-input__field" required>
+                    </div>
+                     <div class="form-input">
+                        <label for="txt_endereco" class="form-input__label">Endereço</label>
+                        <input type="text" name="txt_endereco" placeholder="Endereço" class="form-input__field" required>
+                    </div>
+                       <div class="form-input">
+                        <label for="txt_cidade" class="form-input__label">Cidade</label>
+                        <input type="text" name="txt_cidade" placeholder="Cidade" class="form-input__field" required>
+                    </div>
+                     <div class="form-input">
+                        <label for="txt_bairro" class="form-input__label">Bairro</label>
+                        <input type="text" name="txt_bairro" placeholder="Bairro" class="form-input__field" required>
+                    </div>
+                       <div class="form-input">
+                        <label for="txt_cep" class="form-input__label">CEP</label>
+                        <input type="text" name="txt_cep" placeholder="CEP" class="form-input__field" required>
+                    </div>
+
+                    <button type="submit" name="salvar" id="enviar" value="Salvar Dados" class="button -persistence">Adicionar</button>   
+                </form>             
+            </div>
+        </div>
+        
+        <div class="divMenuGeral">
+            <span class="saudacao">
+                <a href="home.html" class="fontLogoB1">Magalu</a>
+                <a href="home.html" class="fontFinder">Finder</a>
+                <br>
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>

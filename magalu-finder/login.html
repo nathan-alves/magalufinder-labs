@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Magalu Finder</title>
+        <link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
+
+        <link rel="stylesheet" href="assets/css/proa.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+
+		<script language="javascript" type="text/javascript">
+			function verificaLogin() {
+
+				var usuario = form.usuario.value;
+				var password = form.password.value;
+				
+				if(usuario == ""){
+					alert("Favor preencher os campos abaixo!");
+				}
+                else
+                    if (usuario != "adm" && password != "adm")
+                        alert("Usuário ou senha inválidos!")
+				else
+					if(usuario == "adm" && password == "adm"){
+						form.action = "home.html";
+				}
+			}
+		</script>
+
+    </head>
+    <body>
+        <main class="page">
+            <section class="login">
+                <div class="login__container">
+                    <div class="login__box -slogan">
+                        <img src="imagens/logo-admin-ml.png" alt="Administrativo" class="navbar__brand__logo">
+                      
+                    </div><br>
+                    <div class="login__box -form">
+                        <h2 class="fonte-cor">Acesso ao sistema</h2>
+
+                        <form class="form" method="POST" name="form">
+                            <div class="form-input">
+                                <label for="username" class="fonte-cor">Usuário</label>
+                                <input type="text" id="txt_username" name="usuario" class="form-input__field">
+                            </div>
+                            <div class="form-input">
+                                <label for="password" class="fonte-cor">Senha</label>
+                                <input type="password" id="txt_password" name="password" class="form-input__field">
+                            </div>
+                        <button onclick="verificaLogin()" class="button -persistence -block">Acessar</button>
+                        </form>
+                       
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </body>
+</html>

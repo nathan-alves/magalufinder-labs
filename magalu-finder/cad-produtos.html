@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Magalu Finder</title>
+    <link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/proa.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/stripcolor.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+</head>
+<body style="background-color: #E8E8E8">
+    
+     <div class="estiloMenu">
+        <div class="divMenuItens">Produtos</div>
+        <div class="container-strip-footer">
+            <span class="divLu">
+                <img src="imagens/lu.png" height="149px" width="155px">
+            </span>
+      
+            <div class="strips">
+                <span class="strips__strip -yellow"></span>
+                <span class="strips__strip -orange"></span>
+                <span class="strips__strip -red"></span>
+                <span class="strips__strip -pink"></span>
+                <span class="strips__strip -purple"></span>
+                <span class="strips__strip -purple-dark"></span>
+                <span class="strips__strip -blue"></span>
+                <span class="strips__strip -cyan"></span>
+                <span class="strips__strip -green-light"></span>
+                <span class="strips__strip -green"></span>
+            </div>
+            <br>
+        
+            <div>
+                <form  name="form_produto" id="form_produto" method="POST" action="adicionarproduto.php" class="form1">
+
+                    <div class="form-input">
+                        <label for="txt_codigo" class="form-input__label">Código</label>
+                        <input type="txt" name="txt_codigo" placeholder="Código" class="form-input__field" required>
+                    </div> 
+                    <div class="form-input">
+                        <label for="txt_nome" class="form-input__label">Nome</label>
+                        <input type="text" name="txt_nome" placeholder="Nome" class="form-input__field" required>
+                    </div>
+                     <div class="form-input">
+                        <label for="txt_descricao" class="form-input__label">Descrição</label>
+                        <input type="txt" name="txt_descricao" placeholder="Detalhes do produto" class="form-input__field" required>
+                    </div>
+                     <div class="form-input">
+                        <label for="txt_valor" class="form-input__label">Valor </label>
+                        <input type="txt" name="txt_valor" placeholder="Valor do produto" class="form-input__field" required>
+                    </div>
+                
+                     <button type="submit" name="salvar" id="enviar" value="Salvar Dados" class="button -persistence">Adicionar</button>   
+                </form>             
+            </div>
+        </div>
+        
+        <div class="divMenuGeral">
+            <span class="saudacao">
+                <a href="home.html" class="fontLogoB1">Magalu</a>
+                <a href="home.html" class="fontFinder">Finder</a>
+                <br>
+            </span>
+        </div>
+
+   
+
+    </div>
+
+</body>
+</html>

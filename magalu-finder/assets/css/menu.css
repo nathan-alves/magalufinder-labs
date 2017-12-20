@@ -1,0 +1,76 @@
+.estiloMenu{
+	position:absolute;
+	top: 0;
+	right: 0;
+	width:100%;
+	height: 160px;
+	background-color:#0083CA;
+}
+
+a:hover{
+	text-decoration: none;
+	color:white;
+}
+
+.campoItens{
+	width: 99%;
+	margin-left: -10px;
+	position:absolute;
+	margin-top:110px;
+}
+
+.divMenuItens{
+	width: 100%;
+	height: 50px;
+	position:absolute;
+	margin-top:110px;
+	background-color:#02659B;
+	text-align: center;
+	padding-top: 4px;
+	color: white;
+	font-size: 30px;
+}
+
+.divMenuGeral{
+	margin-left:164px; 
+	width: 88%;
+	height: 110px;
+	position:absolute;
+}
+
+.saudacao{
+	position:absolute;
+	padding-top:50px;
+}
+
+.fontMagalu{
+	font-family: Arial;
+	color:white;
+	font-size:25px;
+	font-weight: bold;
+	text-decoration:none; 
+	margin-left: -19px;
+}
+
+.fontLogoB1{
+	font-family: Arial;
+	color:white;
+	font-size:25px;
+	font-weight: bold;
+	text-decoration:none; 
+	margin-left: 7px;
+}
+
+.fontFinder{
+	font-family: Arial;
+	color:white;
+	font-size:21px;
+	text-decoration:none; 
+	margin-left: 4px;
+}
+
+.campoGeral{
+	margin-left: 10px;
+	width: 80%;
+	height: 100%;
+}

@@ -1,6 +1,6 @@
 <?php
 
-	include_once("../model/dao.php");
+	include_once "./model/dao.php";
 	
 	//Classe de comunicação com BD e Controller
 	class UsuarioModel {

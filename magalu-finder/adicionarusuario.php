@@ -1,6 +1,6 @@
 <?php
-		include_once("./model/dao.php");
-		include_once("./controller/controller.usuario.php");
+		include_once "./model/dao.php";
+		include_once "./controller/controller.usuario.php";
 		
 		$id = $_POST['txt_id'];
 		$nome = $_POST['txt_nome'];
@@ -20,8 +20,6 @@
 
 		$retorno = $obj_usuario->adicionar();   
 
-		#var_dump($retorno);       
-							  
 		if($retorno)
 		{
 			echo "<h3><center>Usuário Cadastrado com Sucesso!</center></h3>";
@@ -33,10 +31,3 @@
 			include("home.html");
 		}
 ?>
-<!--<br /><br />
-
-<div align="center">
-	<input type="submit" value="Cadastrar novo Cliente" target="_parent" onClick="document.location='./cad-usuario.html'">
-	<input type="submit" value="Listar todos os Clientes" target="_parent" onClick="document.location='./lista_clientes.php'">
-</div> -->
-

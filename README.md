@@ -7,8 +7,8 @@ http://magalufinder.000webhostapp.com/magalu-finder/
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-FUNCIONAMENTO
-Para o cliente:
+FUNCIONAMENTO:
+--> Para o cliente:
 
 Ao acessar a página inicial da aplicação, é informado ao cliente o seu espaço onde terá acesso ao catálogo de produtos.
 

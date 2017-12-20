@@ -1,5 +1,5 @@
 <?php
-	include_once './controller/controller.loja.php';
+	    include_once './controller/controller.loja.php';
         include_once './model/dao.php';
 		
 		$filial = $_POST['txt_filial'];
@@ -28,8 +28,8 @@
 		}
 		else
 		{
-			echo "<h3><center>Falha ao adicionar loja!</center></h3>";
-			include("home.html");
+				echo "<h3><center>Falha ao adicionar loja!</center></h3>";
+			    include("home.html");
 		}
 ?>
 

@@ -6,8 +6,7 @@
   outline: none;
   list-style: none;
   vertical-align: baseline;
-  text-decoration: none; 
-}
+  text-decoration: none; }
 
 .dropdown__link__help-text, .form-input__help-text, .gr, .page, .page__header, .navbar, .navbar.-header .navbar__nav, .form, .form-input, .form-input__fieldset, .modal__header, .modal__body, .modal__footer, .strips, body {
   clear: both; }
@@ -1406,5 +1405,4 @@ a:hover, a:visited, a:active {
 .form1{
     margin-left: 40%;
   }
-
 

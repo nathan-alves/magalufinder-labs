@@ -20,8 +20,9 @@ Pela página home, o administrador deve clicar no link que esta no canto superio
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 LOGIN:
-Usuário -> adm
-Senha -> adm
+Usuário: adm
+Senha: adm
+
 OBS.: O acesso ao painel de controle só é permitido com a inserção do usuário e senha corretamente. Caso contrário, a página irá retornar mensagens de erro ou que não foi preenchido os campos.
   
   

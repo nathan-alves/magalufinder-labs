@@ -1,6 +1,6 @@
 <?php
-	include_once("../model/model.loja.php");
-	
+	include_once "./model/model.loja.php";
+
 	//Classe de Comunicação com Model e View (Regra de negócios)
 	class LojaController extends LojaModel {
 		

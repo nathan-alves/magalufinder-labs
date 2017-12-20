@@ -1,14 +1,11 @@
 <?php
-
- 	#error_reporting(E_ALL);
-
 	class Dao {
 		
 		//Declaração dos atributos
 		private $servidor 	= "localhost";
-		private $usuario 	= "root";
-		private $senha 		= "";
-		private $nome_banco = "db_magalufinder";
+		private $usuario 	= "id4033850_magalufinder";
+		private $senha 		= "magfinder1";
+		private $nome_banco = "id4033850_db_magalufinder";
 		private $conexao;
 		private $resultado;
 		private $sql;
@@ -26,7 +23,6 @@
 			if ($this->conexao->connect_errno) {
 				printf("Falha na conex&atilde;o:\n%s", 
 					$this->conexao->connect_error);
-				die;
 			}
 		}
 		
@@ -40,10 +36,7 @@
 			$this->openConn(); //abre conexao
 			$retorno = $this->conexao->query($sql); //executa o comando
 			
-			var_dump($this);
-			
 			$this->closeConn(); //fechar a conexão
-			
 			return $retorno;
 		}
 		
@@ -71,5 +64,4 @@
 			return new Dao();
 		}
 	}
-	
 ?>

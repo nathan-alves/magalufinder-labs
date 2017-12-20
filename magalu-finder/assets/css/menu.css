@@ -19,18 +19,6 @@ a:hover{
 	margin-top:110px;
 }
 
-.divMenuItens{
-	width: 100%;
-	height: 50px;
-	position:absolute;
-	margin-top:110px;
-	background-color:#02659B;
-	text-align: center;
-	padding-top: 4px;
-	color: white;
-	font-size: 30px;
-}
-
 .divMenuGeral{
 	margin-left:164px; 
 	width: 88%;
@@ -41,6 +29,18 @@ a:hover{
 .saudacao{
 	position:absolute;
 	padding-top:50px;
+}
+
+.divMenuItens{
+	width: 100%;
+	height: 50px;
+	position:absolute;
+	margin-top:110px;
+	background-color:#02659B;
+	text-align: center;
+	padding-top: 4px;
+	color: white;
+	font-size: 30px;
 }
 
 .fontMagalu{

@@ -2,262 +2,35 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    	<title>Magalu Finder</title>
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    	<link rel="icon" href="../imagens/lu2-natal.png" type="image/png" sizes="16x16">
-	<link rel="stylesheet" type="text/css" href="assets/css/proa.css">	
-   	<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
-    <style>
-    #celular{
-        display: none;
-    }
-
-    #Moveis{
-        display: none;
-    }
-    #Eletro{
-        display: none;
-    }
-
-    #Brinquedo{
-        display: none;
-    }
-    #informatica{
-        display: none;
-    }
-
-    #eletroPort{
-        display: none;
-    }
-    </style>
-</head>
-<body>
-	<div class="strips">
-	    <span class="strips__strip -yellow"></span>
-	    <span class="strips__strip -orange"></span>
-	    <span class="strips__strip -red"></span>
-	    <span class="strips__strip -pink"></span>
-	    <span class="strips__strip -purple"></span>
-	    <span class="strips__strip -purple-dark"></span>
-	    <span class="strips__strip -blue"></span>
-	    <span class="strips__strip -cyan"></span>
-	    <span class="strips__strip -green-light"></span>
-	    <span class="strips__strip -green"></span>
-	</div>
-
-<nav class="navbar -header">
-    <div class="container">
-     
-        <ul class="navbar__nav">
-            <li class="navbar_nav_item">
-                <a href="index.html" title="Home" id="home" class="navbar_nav_link -active">Home</a>
-            </li>
-            <li class="navbar_nav_item">
-                <a href="#" title="Menu" id="menuCelular" class="navbar_nav_link">Celulares</a>
-            </li>
-              <li class="navbar_nav_item">
-                <a href="#" title="Menu" id="menuMoveis" class="navbar_nav_link">Móveis</a>
-            </li>
-              <li class="navbar_nav_item">
-                <a href="#" title="Menu" id="menuEletro" class="navbar_nav_link">Eletrodomésticos</a>
-            </li>
-              <li class="navbar_nav_item">
-                <a href="#" title="Menu" id="menuBrinquedo"class="navbar_nav_link">Brinquedo</a>
-            </li>
-              <li class="navbar_nav_item">
-                <a href="#" title="Menu" id="menuInformatica" class="navbar_nav_link">Informática</a>
-            </li>
-              <li class="navbar_nav_item">
-                <a href="#" title="Menu" id="menuEletroPort" class="navbar_nav_link">Eletroportáteis</a>
-            </li>
-         
-        </ul>
-        <!--tabela celular-->
-        <div>
-            <table width="50%" class="catProdutos" id="celular">
-                <tr>
-                    <td><img src="../assets/imagens/iphone6s.png"/>iPhone 6s 32GB</td>
-
-                </tr>
-                <tr>
-                    <td><img src="../imagens/lgk10.png"/>LG K10</td>
-                    <td><img src="../imagens/iphoneSE.png"/>iPhone SE 16GB</td>
-                </tr>
-            </table>
-        </div>
-
-          <!--tabela Moveis -->
-          <div>
-            <table width="50%" class="catProdutos" id="Moveis">
-                <tr>
-                    <td><img src="../imagens/lu2-natal.png"/>iPhone 6s 32GB</td>
-                    <td><img src="../imagens/lu2-natal.png"/>Samsung Galaxy S8</td>
-                </tr>
-                <tr>
-
-                </tr>
-            </table>
-        </div>
-        
-         <!--tabela Eletro-->
-         <div>
-                <table width="50%" class="catProdutos" id="Eletro">
-                    <tr>
-                        <td><img src="../imagens/iphone6s.png"/>iPhone 6s 32GB</td>
-                        <td><img src="../imagens/galaxy8.png"/>Samsung Galaxy S8</td>
-                        <td><img src="../imagens/galaxyj7.jpg"/>Samsung Galaxy J7</td>
-                    </tr>
-                    <tr>
-
-                    </tr>
-                </table>
-            </div>
-    
-              <!--tabela Brinquedo -->
-              <div>
-                <table width="50%" class="catProdutos" id="Brinquedo">
-                    <tr>
-                        <td><img src="../imagens/lu2-natal.png"/>iPhone 6s 32GB</td>
-                        <td><img src="../imagens/lu2-natal.png"/>Samsung Galaxy S8</td>
-                        <td><img src="../imagens/lu2-natal.png"/>Samsung Galaxy J7</td>
-                    </tr>
-                    <tr>
-
-                    </tr>
-                </table>
-            </div>
-        
-             <!--tabela informatica-->
-        <div>
-                <table width="50%" class="catProdutos" id="informatica">
-                    <tr>
-                        <td><img src="../imagens/iphone6s.png"/>iPhone 6s 32GB</td>
-                        <td><img src="../imagens/galaxy8.png"/>Samsung Galaxy S8</td>
-                        <td><img src="../imagens/galaxyj7.jpg"/>Samsung Galaxy J7</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../imagens/galaxyj5.jpg"/>Samsung Galaxy J5</td>
-
-                    </tr>
-                </table>
-            </div>
-    
-              <!--tabela eletroPort -->
-              <div>
-                <table width="50%" class="catProdutos" id="eletroPort">
-                    <tr>
-                        <td><img src="../imagens/lu2-natal.png"/>iPhone 6s 32GB</td>
-                        <td><img src="../imagens/lu2-natal.png"/>Samsung Galaxy S8</td>
-                        <td><img src="../imagens/lu2-natal.png"/>Samsung Galaxy J7</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../imagens/lu2-natal.png"/>Samsung Galaxy J5</td>
-                        <td><img src="../imagens/lu2-natal.png"/>LG K10</td>
-                    </tr>
-                </table>
-            </div>
-        
-          
-        
-    </div>
-</nav>
-
-</body>
-
-<script>
-   
-   $('#home').click(
-        function () {
-            $('#celular').css("display","none");   
-            $('#Moveis').css("display","none");   
-            $('#Eletro').css("display","none");
-            $('#Brinquedo').css("display","none");         
-            $('#informatica').css("display","none");
-            $('#eletroPort').css("display","none");            
-                                 
-        }
-    );
-    $('#menuCelular').click(
-        function () {
-            $('#celular').css("display","inline");   
-            $('#Moveis').css("display","none");   
-            $('#Eletro').css("display","none");
-            $('#Brinquedo').css("display","none");         
-            $('#informatica').css("display","none");
-            $('#eletroPort').css("display","none");            
-                                 
-        }
-    );
-    $('#menuMoveis').click(
-        function () {
-            $('#celular').css("display","none");   
-            $('#Moveis').css("display","inline");   
-            $('#Eletro').css("display","none");
-            $('#Brinquedo').css("display","none");        
-            $('#informatica').css("display","none");
-            $('#eletroPort').css("display","none");            
-                                    
-        }
-    );
-    $('#menuEletro').click(
-        function () {
-            $('#celular').css("display","none");   
-            $('#Moveis').css("display","none");   
-            $('#Eletro').css("display","inline");
-            $('#Brinquedo').css("display","none");         
-            $('#informatica').css("display","none");
-            $('#eletroPort').css("display","none");            
-                                 
-        }
-    );
-    $('#menuBrinquedo').click(
-        function () {
-            $('#celular').css("display","none");   
-            $('#Moveis').css("display","none");   
-            $('#Eletro').css("display","none");
-            $('#Brinquedo').css("display","inline");                 
-            $('#informatica').css("display","none");
-            $('#eletroPort').css("display","none");            
-                                 
-        }
-    );
-    $('#menuInformatica').click(
-        function () {
-            $('#celular').css("display","none");   
-            $('#Moveis').css("display","none");   
-            $('#Eletro').css("display","none");
-            $('#Brinquedo').css("display","none");          
-            $('#informatica').css("display","inline");
-            $('#eletroPort').css("display","none");            
-                                
-        }
-    );
-    $('#menuEletroPort').click(
-        function () {
-            $('#celular').css("display","none");   
-            $('#Moveis').css("display","none");   
-            $('#Eletro').css("display","none");
-            $('#Brinquedo').css("display","none");          
-            $('#informatica').css("display","none");
-            $('#eletroPort').css("display","inline");            
-                                
-        }
-    );
-</script>
-</html>
-
-
-
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
 	<title>Magalu Finder</title>
-    <link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
-
+    	<link rel="icon" href="imagens/lu2-natal.png" type="image/png" sizes="16x16">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/proa.css">	
-	<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+    	<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+    <style>
+        #celular{
+            display: none;
+        }
+    
+        #moveis{
+            display: none;
+        }
+        #eletro{
+            display: none;
+        }
+    
+        #brinquedo{
+            display: none;
+        }
+        #informatica{
+            display: none;
+        }
+    
+        #eletroPort{
+            display: none;
+        }
+        </style>
+    
 </head>
 <body style="background-color: white">
 	<div class="strips">
@@ -272,7 +45,6 @@
         <span class="strips__strip -green-light"></span>
         <span class="strips__strip -green"></span>
     </div>
-
     <nav class="navbar -header">
         <div class="container">
             <ul class="navbar__nav">
@@ -280,22 +52,22 @@
                     <a href="index.html" title="Home" class="navbar__nav__link -active">Home</a>
                 </li>
                 <li class="navbar__nav__item">
-                    <a href="#" title="Menu" class="navbar__nav__link">Celulares</a>
+                    <a id="menuCelular" title="Menu" class="navbar__nav__link">Celulares</a>
                 </li>
                   <li class="navbar__nav__item">
-                    <a href="#" title="Menu" class="navbar__nav__link">Móveis</a>
+                    <a id="menuMoveis" title="Menu" class="navbar__nav__link">Móveis</a>
                 </li>
                   <li class="navbar__nav__item">
-                    <a href="#" title="Menu" class="navbar__nav__link">Eletrodomésticos</a>
+                    <a id="menuEletro" title="Menu" class="navbar__nav__link">Eletrodomésticos</a>
                 </li>
                   <li class="navbar__nav__item">
-                    <a href="#" title="Menu" class="navbar__nav__link">Brinquedo</a>
+                    <a id="menuBrinquedo" title="Menu" class="navbar__nav__link">Brinquedos</a>
                 </li>
                   <li class="navbar__nav__item">
-                    <a href="#" title="Menu" class="navbar__nav__link">Informática</a>
+                    <a id="menuInformatica" title="Menu" class="navbar__nav__link">Informática</a>
                 </li>
                   <li class="navbar__nav__item">
-                    <a href="#" title="Menu" class="navbar__nav__link">Eletroportáteis</a>
+                    <a id="menuEletroPort" title="Menu" class="navbar__nav__link">Eletroportáteis</a>
                 </li>
             </ul>
         </div>
@@ -303,19 +75,170 @@
 
     <br><br>
     <div>
-        <table width="50%" class="catProdutos">
+        <table width="50%" class="catProdutos" id="celular">
             <tr>
-                <td><img src="imagens/iphone6s.png"/>iPhone 6s 32GB</td>
-                <td><img src="imagens/galaxy8.png"/>Samsung Galaxy S8</td>
-                <td><img src="imagens/galaxyj7.jpg"/>Samsung Galaxy J7</td>
+                <td><img src="imagens/iphone6s.png"/></td>
+                <td><img src="imagens/galaxy8.png"/></td>
+                <td><img src="imagens/galaxyj7.jpg"/></td>
             </tr>
             <tr>
-                <td><img src="imagens/galaxyj5.jpg"/>Samsung Galaxy J5</td>
-                <td><img src="imagens/lgk10.png"/>LG K10</td>
-                <td><img src="imagens/iphoneSE.png"/>iPhone SE 16GB</td>
+                <td><img src="imagens/galaxyj5.jpg"/></td>
+                <td><img src="imagens/lgk10.png"/></td>
+                <td><img src="imagens/iphoneSE.png"/></td>
+            </tr>
+        </table>
+        
+         <table width="50%"  class="catProdutos" id="moveis">
+            <tr>
+                <td><img src="imagens/poltrona.png"/></td>
+                <td><img src="imagens/rack.png"/></td>
+                <td><img src="imagens/guardaroupa.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/escrivaninha.png"/></td>
+                <td><img src="imagens/banqueta.png"/></td>
+                <td><img src="imagens/sofa.jpg"/></td>
+            </tr>
+        </table>
+        
+         <table width="50%" class="catProdutos" id="eletro">
+            <tr>
+                <td><img src="imagens/batedeira.jpg"/></td>
+                <td><img src="imagens/fogao2.jpg"/></td>
+                <td><img src="imagens/cooktop.jpg"/></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/geladeira.jpg"/></td>
+                <td><img src="imagens/maquina-de-lavar.jpg"/></td>
+                <td><img src="imagens/maquina-de-lavar2.jpg"/></td>
+            </tr>
+        </table>
+        
+         <table width="50%" class="catProdutos" id="brinquedo">
+            <tr>
+                <td><img src="imagens/boneca.png"/></td>
+                <td><img src="imagens/minicarro.png"/></td>
+                <td><img src="imagens/triciclo.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/cadeirainfantil.png"/></td>
+                <td><img src="imagens/piscinabolinha.jpg"/></td>
+                <td><img src="imagens/comidinha.jpg"/></td>
+            </tr>
+        </table>
+        
+         <table width="50%" class="catProdutos" id="informatica">
+            <tr>
+                <td><img src="imagens/monitor.png"/></td>
+                <td><img src="imagens/notebook.png"/></td>
+                <td><img src="imagens/pendrive.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/roteador.png"/></td>
+                <td><img src="imagens/tablet.jpg"/></td>
+                <td><img src="imagens/hd.png"/></td>
+            </tr>
+        </table>
+        
+         <table width="40%" class="catProdutos" id="eletroPort">
+            <tr>
+                <td><img src="imagens/aspirador.jpg"/></td>
+                <td><img src="imagens/batedeira.jpg"/></td>
+                <td><img src="imagens/forno.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/ferro.png"/></td>
+                <td><img src="imagens/moedor.png"/></td>
+                <td><img src="imagens/climatizador.jpg"/></td>
+            </tr>
+        </table>
+        
+         <table width="50%" class="catProdutos" id="celular">
+            <tr>
+                <td><img src="imagens/iphone6s.png"/></td>
+                <td><img src="imagens/galaxy8.png"/></td>
+                <td><img src="imagens/galaxyj7.jpg"/></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/galaxyj5.jpg"/></td>
+                <td><img src="imagens/lgk10.png"/></td>
+                <td><img src="imagens/iphoneSE.png"/></td>
             </tr>
         </table>
     </div>
-
+<script>
+   
+   $('#home').click(
+        function () {
+            $('#celular').css("display","none");   
+            $('#moveis').css("display","none");   
+            $('#eletro').css("display","none");
+            $('#brinquedo').css("display","none");         
+            $('#informatica').css("display","none");
+            $('#eletroPort').css("display","none");                               
+        }
+    );
+    $('#menuCelular').click(
+        function () {
+            $('#celular').css("display","inline");   
+            $('#moveis').css("display","none");   
+            $('#eletro').css("display","none");
+            $('#brinquedo').css("display","none");         
+            $('#informatica').css("display","none");
+            $('#eletroPort').css("display","none");                                   
+        }
+    );
+    $('#menuMoveis').click(
+        function () {
+            $('#celular').css("display","none");   
+            $('#moveis').css("display","inline");   
+            $('#eletro').css("display","none");
+            $('#brinquedo').css("display","none");        
+            $('#informatica').css("display","none");
+            $('#eletroPort').css("display","none");                                     
+        }
+    );
+    $('#menuEletro').click(
+        function () {
+            $('#celular').css("display","none");   
+            $('#moveis').css("display","none");   
+            $('#eletro').css("display","inline");
+            $('#brinquedo').css("display","none");         
+            $('#informatica').css("display","none");
+            $('#eletroPort').css("display","none");                                 
+        }
+    );
+    $('#menuBrinquedo').click(
+        function () {
+            $('#celular').css("display","none");   
+            $('#moveis').css("display","none");   
+            $('#eletro').css("display","none");
+            $('#brinquedo').css("display","inline");                 
+            $('#informatica').css("display","none");
+            $('#eletroPort').css("display","none");            
+                                 
+        }
+    );
+    $('#menuInformatica').click(
+        function () {
+            $('#celular').css("display","none");   
+            $('#moveis').css("display","none");   
+            $('#eletro').css("display","none");
+            $('#brinquedo').css("display","none");          
+            $('#informatica').css("display","inline");
+            $('#eletroPort').css("display","none");                                 
+        }
+    );
+    $('#menuEletroPort').click(
+        function () {
+            $('#celular').css("display","none");   
+            $('#moveis').css("display","none");   
+            $('#eletro').css("display","none");
+            $('#brinquedo').css("display","none");          
+            $('#informatica').css("display","none");
+            $('#eletroPort').css("display","inline");                                 
+        }
+    );
+</script>
 </body>
-</html> -->
+</html>
